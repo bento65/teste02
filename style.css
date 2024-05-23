@@ -1,0 +1,249 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 5px;
+    display: flex;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-image: url(https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/434966793_1451173176278591_845373882583543404_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=o2bP4g11auAQ7kNvgHtE055&_nc_ht=scontent.fimp1-1.fna&oh=00_AYBGnyhmhWWUGLLK0DwGsw7-p8EP-5j5zydnXArddXXR2A&oe=66555163);
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+  
+}
+
+.container {
+    text-align: center;
+    background: #ffffff6b;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+    margin: 130px;
+    flex: 1; /* Grow to fill available space */
+}
+
+
+h1 {
+    color: #ff4081;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: colorchange 4s infinite alternate;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #fe0759;
+    }
+
+    25% {
+        color: #21f600;
+    }
+
+    50% {
+        color: #fbe60595;
+    }
+
+    75% {
+        color: #ff0303;
+    }
+
+    100% {
+        color: #0011fa;
+    }
+}
+
+p {
+    color: #0b0b0b;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #9f779345;
+    color: #0000008c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 1px 0;
+    font-size: 20px;
+}
+
+
+button:hover {
+    background: #13dc05a2;
+}
+
+.hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    overflow: hidden;
+    display: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: -100px;
+    width: 50px;
+    height: 50px;
+    background-color: #fc0808;
+    transform: rotate(-45deg);
+    animation: rise 5s infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #f3060a;
+    border-radius: 50%;
+}
+
+.heart:before {
+    top: -25px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: 25px;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateY(-150vh) rotate(-45deg);
+    }
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* fotos */
+.thumbnail-container {
+    display: none;
+    /* Inicialmente escondido */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  
+}
+
+.thumbnail {
+  
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 400px) {
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    .close {
+        font-size: 25px;
+        right: 15px;
+        top: 5px;
+    }
+}
+
+footer {
+    border-radius: 10px;
+    background-color: rgba(114, 250, 3, 0.998);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+footer p {
+    margin: 0;
+    color: #000000;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 5px;
+   
+}
+
+.social-icons a {
+    color: #1d0af5f1;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f50606;
+}

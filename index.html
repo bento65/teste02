@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Feliz Aniversário, Jaqueline Muniz!</h1>
+        <p>Você ilumina minha vida todos os dias. Que seu aniversário seja tão maravilhoso quanto você é para mim. <br>Parabéns!</p>
+        <button id="videoBtn">Click Para Assistir Vídeo</button>
+        <button id="surpriseBtn">Click Para Exibir Surpresa</button>
+        <button id="photoBtn"> Click  Para Exibir Fotos</button>
+        <div class="hearts" id="hearts"></div>
+
+        <div id="photoModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="photo">
+        </div>
+
+    </div>
+
+    <div class="thumbnail-container" id="thumbnailContainer">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/441521490_7746090042145614_6731830658672890787_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ZtoNzDzPPYoQ7kNvgHjP-Xs&_nc_ht=scontent.fimp1-2.fna&oh=00_AYC_1odrxZ5DvRuw6gMRC4lSA6BdQC-bl75wlHFbaBYVGw&oe=6652C776" class="thumbnail" alt="Foto01">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/445026736_7759750670779551_1868343884554361717_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8Btt7HW4E3MQ7kNvgH2NLel&_nc_ht=scontent.fimp1-2.fna&oh=00_AYDQRf0wLqt5HJNJra_WBBfBZE1aHkk_-0sFXWQb2kSgSw&oe=6654EA1D" class="thumbnail" alt="Foto02">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/445181992_7759750667446218_6377021612367258438_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=DD3Jrn2GZQkQ7kNvgEUQtz9&_nc_ht=scontent.fimp1-1.fna&oh=00_AYChz9RRsyAbOQiYS_uf57BRCk80XMqfl33TgUAvbCcI7g&oe=6654E13D" class="thumbnail" alt="Foto03">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/445533366_7759750814112870_257738027291774215_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Zc72xVdXN8AQ7kNvgGb_YMF&_nc_ht=scontent.fimp1-2.fna&oh=00_AYDSAhzn8UxNAhH6jpPdnP7ojbwyfWfZVBUl08CQwkM0oQ&oe=66550EAB" class="thumbnail" alt="Foto04">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/445220694_7759836047437680_6875911095199577728_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2FXIf0cNWRgQ7kNvgFx2BCr&_nc_ht=scontent.fimp1-2.fna&oh=00_AYCkwzFM2Guum-eKQhucx3_nq7Ud7Gv8NzgM0H0sTTgc8w&oe=66551888" class="thumbnail" alt="Foto05">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/444959920_7759835994104352_2229549656862810480_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=doJfGnuXO4kQ7kNvgGMaNPJ&_nc_ht=scontent.fimp1-1.fna&oh=00_AYB-vnUM5LMQGUBblIuJMLpUgIscEkNe4B9s0ehjP8gb1g&oe=6654FAC4" class="thumbnail" alt="Foto06">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/445046115_7759835977437687_7540437971658159734_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Vl9w3wmnWfgQ7kNvgEgIduR&_nc_ht=scontent.fimp1-2.fna&oh=00_AYDtDwWqHzovG3lE5wDWAcINQydMbGBJ6SWqxPIapo7KpQ&oe=6654E6F6" class="thumbnail" alt="Foto07">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/445081789_7759836150771003_6465540441591637392_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=T4IewRBhXg4Q7kNvgHyDb54&_nc_ht=scontent.fimp1-1.fna&oh=00_AYCZWSdRPgNLAgeeEPs4spB15vBi9jb6lNwJR8b0yT2kzg&oe=665519E3" class="thumbnail" alt="Foto08">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/445095875_7759836154104336_6765884990982270664_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=V49az1MQnV0Q7kNvgGHvvWO&_nc_ht=scontent.fimp1-2.fna&oh=00_AYBdv8PHIPU22a0xMwD_ZIy_vahmovpdiob7TN0kh5l6uw&oe=6655106A" class="thumbnail" alt="Foto09">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/445002794_7759836200770998_8061078556789516165_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=V5w04GR2KyYQ7kNvgHlLo7N&_nc_ht=scontent.fimp1-1.fna&oh=00_AYAB8INcGarOg4pEej7UkU_QuUvmOhKuclAQZKtekcd09g&oe=6654F3CD" class="thumbnail" alt="Foto10">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/444928966_7759836330770985_3453170141249776196_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zilmHiMWLTwQ7kNvgG-HsIo&_nc_ht=scontent.fimp1-1.fna&oh=00_AYDyE9miUa5D96gBF1g2-e9gjUnljZ62kNrOxsfU8NCiRA&oe=66550E7C" class="thumbnail" alt="Foto11">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/445191741_7759915990763019_2382389380657952765_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9g7aRXz-EZsQ7kNvgFO74gw&_nc_ht=scontent.fimp1-1.fna&oh=00_AYDjvUaL38JwbnIYrdW6PYXcJ5QuKPV0KGXguhKW0S3XhQ&oe=6654EB27" class="thumbnail" alt="Foto12">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/444948505_7759915980763020_7025016599846189479_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=da5LYnFzxhIQ7kNvgHay9xJ&_nc_ht=scontent.fimp1-2.fna&oh=00_AYAFJlq-tOtA9FyXQta5cSMW6c2uxIg0i5-kP4kHwrtqIw&oe=6654ECB9" class="thumbnail" alt="Foto12">
+        <img src="https://scontent.fimp1-2.fna.fbcdn.net/v/t39.30808-6/445034306_7759916254096326_5563314418511325061_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KF3PNJsjkwgQ7kNvgHsm4fb&_nc_ht=scontent.fimp1-2.fna&oh=00_AYBKRD8T4J6lN2FaQ5_uUXVv6y6ue6Ky_g9Xs_g4Fb7iEg&oe=66550D6A" class="thumbnail" alt="Foto12">
+        <img src="https://scontent.fimp1-1.fna.fbcdn.net/v/t39.30808-6/445191741_7759915990763019_2382389380657952765_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9g7aRXz-EZsQ7kNvgFO74gw&_nc_ht=scontent.fimp1-1.fna&oh=00_AYDjvUaL38JwbnIYrdW6PYXcJ5QuKPV0KGXguhKW0S3XhQ&oe=6654EB27" class="thumbnail" alt="Foto12">
+    </div>
+    <footer>
+        <p>@Bento Lima 2024</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/jb.bento.5" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/bento.65/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
